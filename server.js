@@ -45,6 +45,11 @@ app.post('/check', (req, res) => {
   return res.json({ valid: true, message: 'Entrada valida', type: ticket.tipo, used: false });
 });
 
+// Descargar el CSV actualizado
+app.get('/export', (req, res) => {
+  res.download(csvFile, 'tickets.csv');
+});
+
 app.listen(port, () => {
   console.log(`Servidor iniciado en http://localhost:${port}`);
 });

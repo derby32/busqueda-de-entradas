@@ -21,6 +21,7 @@ El servidor estara disponible en `http://localhost:3000`.
 1. Abrir la URL del servidor en un navegador.
 2. El campo de texto tiene el foco por defecto. Escanee el codigo de barras o escribalo manualmente y presione **Enter**.
 3. Se mostrara si la entrada es valida, su tipo y si ya fue utilizada.
+4. Para descargar el CSV actualizado visite `http://localhost:3000/export`.
 
 Los codigos se definen en `tickets.csv` con la estructura:
 
